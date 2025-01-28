@@ -15,6 +15,10 @@ export default defineConfig({
         changeOrigin: true,
       },
     },
+    allowedHosts: ["URL of ngrok"],
   },
   plugins: [TanStackRouterVite(), react()],
+  test: {
+    environment: "happy-dom",
+  },
 });
